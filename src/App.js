@@ -1,14 +1,29 @@
 import React from 'react';
-import Select from 'react-select'
 
 import CardMeetUp from './components/CardMeetUp/CardMeetUp';
 import MeetUp from './components/NextMeetUp/MeetUp';
 import Members from './components/Members/Members';
 import PastMeet from './components/PastMeetUp/PastMeet';
-import Button from './components/Button/Button';
 import './App.css';
 
 function App() {
+  const dataPastMeet = [
+    {
+      date: '27 Nov 2017',
+      deskripsi: '#39 JakartaJS April Meetup with Kumparan',
+      went:'137',
+    },
+    {
+      date: '27 Oct 2018',
+      deskripsi: '#38 JakartaJS April Meetup with Blibli  and other',
+      went:'137',
+    },
+    {
+      date: '27 Jam 2019',
+      deskripsi: '#37 JakartaJS April Meetup with Hacktiv8',
+      went:'137',
+    },
+  ]
 
   return (
     <div className="App">
@@ -44,13 +59,7 @@ function App() {
     <text className="SeeAll">See all</text><br />
 
  
-
-  <div class="flex-container">
-  <div> <PastMeet date="27 November 2017" deskripsi="#39 JakartaJS April Meetup with Kumparan" went="139"/></div>
-  <div> <PastMeet date="27 Oktober 2017" deskripsi="#38 JakartaJS April Meetup with Blibli  and other" went="113"/></div>
-  <div> <PastMeet date="27 September 2017" deskripsi="#37 JakartaJS April Meetup with Hacktiv8" went="110"/></div>  
-      
-  </div>
+    <PastMeet data={dataPastMeet}/>  
   </div>
   );
 }

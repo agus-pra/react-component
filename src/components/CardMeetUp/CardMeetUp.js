@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 import AvatarImage from '../../assets/avatar.jpg';
 import './cardMeetUp.css';
 
-const CardMeetUp = (Props) => {
+const CardMeetUp = ({location, members, organizer}) => {
 
   const thanksForJoin = () => {
     alert('Terima kasih sudah join meetup');
@@ -15,19 +15,19 @@ const CardMeetUp = (Props) => {
     <div>
       <div className="cardJoinUs">
         <div>
-          <Avatar src={AvatarImage} />
+          <Avatar src={AvatarImage} alt="img avatar" />
         </div>
         <div className="cardJoinUs2">
           <h2>Hacktiv 8 Meetup</h2>
           <table>
             <tr>
-              <td>Location</td><td>{Props.location}</td>
+              <td>Location</td><td>{location}</td>
             </tr>
             <tr>
-              <td>Members</td><td>{Props.members}</td>
+              <td>Members</td><td>{members}</td>
             </tr>
             <tr>
-              <td>Organizer</td><td>{Props.organizer}</td>
+              <td>Organizer</td><td>{organizer}</td>
             </tr>
           </table>
           <Button textButton="JOIN US" onClick={thanksForJoin}/>

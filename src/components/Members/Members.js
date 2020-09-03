@@ -7,7 +7,7 @@ import Avatar from '../Avatar/Avatar';
 import  './members.css';
 
 
-const Members = (PropsMembers) => {
+const Members = ({name, sum}) => {
     return(
         <div >
             <div className="Membercss">
@@ -18,9 +18,9 @@ const Members = (PropsMembers) => {
                 <table>
                
                 <tr>
-                    <td>{PropsMembers.name}</td>
+                    <td>{name}</td>
                     <td></td>
-                    <td>{PropsMembers.sum}</td>
+                    <td>{sum}</td>
                 </tr>
                
                 </table>

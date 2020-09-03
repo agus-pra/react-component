@@ -1,11 +1,11 @@
 import React from 'react';
 import './meetUp.css';
 
-const MeetUp = (PropsMeetUp) =>{
+const MeetUp = ({title}) =>{
     return(
         <div className="MeetUptext">
             <div className="MeetUptext2">
-            <b>{PropsMeetUp.title}</b><br />
+            <b>{title}</b><br />
             <p>25 January 2019</p>
             <br></br>
             <p>

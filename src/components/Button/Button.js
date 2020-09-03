@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 // textButton
 const Button = ({ textButton, onClick, type }) => {
   return (
-    <button type={type} onClick={onClick} >{ textButton }</button>
+    <button type={type} onClick={onClick} >
+      { textButton }
+    </button>
   );
 }
 

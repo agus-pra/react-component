@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import './avatar.css';
 
-const Avatar = ({ src }) => {
+const Avatar = ({ src, alt }) => {
   return (
-    <img src={src} alt="Profile User" className="avatar"/>
+    <img src={src} alt={alt} className="avatar"/>
   );
 }
 
