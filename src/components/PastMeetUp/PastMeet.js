@@ -5,7 +5,7 @@ import  './pastMeet.css';
 
 const PastMeet = ({data}) => {
     return(
-        <div >
+        <>
             {
                 data.map((item) => (
                         <div className="PastMeetcss">
@@ -23,7 +23,7 @@ const PastMeet = ({data}) => {
                 ))
             }
                 
-            </div>
+        </>
         
     )
 }

@@ -58,8 +58,10 @@ function App() {
     <h2>Past Meetup</h2> 
     <text className="SeeAll">See all</text><br />
 
- 
+    <div className="cartPastMeet">
     <PastMeet data={dataPastMeet}/>  
+    </div>
+    
   </div>
   );
 }
