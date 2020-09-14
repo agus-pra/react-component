@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Avatar from '../Avatar/Avatar';
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
 import AvatarImage from '../../assets/avatar.jpg';
-import './cardMeetUp.css';
+import {Button, Wrapper, Table, Tr, Td, Card, Img} from './cardMeetUp.style.js';
 
 const CardMeetUp = ({location, members, organizer}) => {
 
@@ -12,28 +12,27 @@ const CardMeetUp = ({location, members, organizer}) => {
   }
 
   return (
-    <div>
-      <div className="cardJoinUs">
-        <div>
+      <Wrapper>
+        <Img>
           <Avatar src={AvatarImage} alt="img avatar" />
-        </div>
-        <div className="cardJoinUs2">
+        </Img>
+        <Card>
           <h2>Hacktiv 8 Meetup</h2>
-          <table>
-            <tr>
-              <td>Location</td><td>{location}</td>
-            </tr>
-            <tr>
-              <td>Members</td><td>{members}</td>
-            </tr>
-            <tr>
-              <td>Organizer</td><td>{organizer}</td>
-            </tr>
-          </table>
-          <Button textButton="JOIN US" onClick={thanksForJoin}/>
-        </div>
-      </div>
-    </div>
+          <Table>
+            <Tr>
+              <Td>Location</Td><Td>{location}</Td>
+            </Tr>
+            <Tr>
+              <Td>Members</Td><Td>{members}</Td>
+            </Tr>
+            <Tr>
+              <Td>Organizer</Td><Td>{organizer}</Td>
+            </Tr>
+          </Table>
+          <Button onClick={thanksForJoin}>JOINT US</Button>
+          <Button primary onClick={thanksForJoin}>START</Button>
+        </Card>
+      </Wrapper>
   );
 }
 

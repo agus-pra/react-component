@@ -2,32 +2,31 @@ import React from 'react';
 
 
 import AvatarImages from '../../assets/avatar.jpg';
-import Avatar from '../Avatar/Avatar';
-
-import  './members.css';
+import Avatar1 from '../Avatar1/Avatar1';
+import {Wrapper, Card} from './members.style.js';
 
 
 const Members = ({name, sum}) => {
     return(
         <div >
-            <div className="Membercss">
-                <div > <Avatar className="AvatarMembers1" src={AvatarImages} alt={AvatarImages} /></div>
+            <Wrapper>
+                <div > <Avatar1 src={AvatarImages} alt={AvatarImages} /></div>
                 
-                <div className="Membercss2">
-                <h2>Organizers</h2>
-                <table>
-               
-                <tr>
-                    <td>{name}</td>
-                    <td></td>
-                    <td>{sum}</td>
-                </tr>
-               
-                </table>
-               
-               
-                </div>
-            </div>
+                <Card>
+                    <h2>Organizers</h2>
+                    <table>
+                
+                    <tr>
+                        <td>{name}</td>
+                        <td></td>
+                        <td>{sum}</td>
+                    </tr>
+                
+                    </table>
+                
+                
+                    </Card>
+            </Wrapper>
         </div>
     )
 }

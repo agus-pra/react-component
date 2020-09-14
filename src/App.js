@@ -12,16 +12,19 @@ function App() {
       date: '27 Nov 2017',
       deskripsi: '#39 JakartaJS April Meetup with Kumparan',
       went:'137',
+      btn :'primary',
     },
     {
       date: '27 Oct 2018',
-      deskripsi: '#38 JakartaJS April Meetup with Blibli  and other',
+      deskripsi: '#38 JakartaJS April Meetup with Blibli',
       went:'137',
+      btn :'success',
     },
     {
       date: '27 Jam 2019',
       deskripsi: '#37 JakartaJS April Meetup with Hacktiv8',
       went:'137',
+      btn :'warning',
     },
   ]
 
@@ -61,7 +64,7 @@ function App() {
     <div className="cartPastMeet">
     <PastMeet data={dataPastMeet}/>  
     </div>
-    
+
   </div>
   );
 }

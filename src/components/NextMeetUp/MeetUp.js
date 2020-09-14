@@ -1,10 +1,11 @@
 import React from 'react';
-import './meetUp.css';
+import {Wrapper, Text} from './meetUp.style.js';
+
 
 const MeetUp = ({title}) =>{
     return(
-        <div className="MeetUptext">
-            <div className="MeetUptext2">
+        <Wrapper>
+            <Text>
             <b>{title}</b><br />
             <p>25 January 2019</p>
             <br></br>
@@ -20,8 +21,8 @@ const MeetUp = ({title}) =>{
                Best, Hengki, Giovanni, Sofian, Riza, Agung The JakartaJS Organizers.
                
             </p>
-            </div>
-        </div>
+            </Text>
+        </Wrapper>
     )
 }
 
