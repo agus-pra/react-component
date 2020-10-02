@@ -17,7 +17,7 @@ const CardMeetUp = ({location, members, organizer}) => {
           <Avatar src={AvatarImage} alt="img avatar" />
         </Img>
         <Card>
-          <h2>Hacktiv 8 Meetup</h2>
+          <h2>Hacktiv8 Meetup</h2>
           <Table>
             <Tr>
               <Td>Location</Td><Td>{location}</Td>
