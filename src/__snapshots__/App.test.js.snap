@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<CardMeetUp
+  location="Medan, Indonesia"
+  members="180"
+  organizer="ReactJs"
+>
+  <styled.section>
+    <section
+      className="sc-bdnylx cekMnc"
+    >
+      <styled.section>
+        <section
+          className="sc-gtssRu XWBRl"
+        >
+          <Avatar
+            alt="img avatar"
+            src="avatar.jpg"
+          >
+            <img
+              alt="img avatar"
+              className="avatar"
+              src="avatar.jpg"
+            />
+          </Avatar>
+        </section>
+      </styled.section>
+      <styled.section>
+        <section
+          className="sc-jSFkmK iWYDKa"
+        >
+          <h2>
+            Hacktiv8 Meetup
+          </h2>
+          <styled.table>
+            <table
+              className="sc-dlnjPT edvPjk"
+            >
+              <styled.tr>
+                <tr
+                  className="sc-hKFyIo brbWtm"
+                >
+                  <styled.td>
+                    <td
+                      className="sc-eCApGN jdectq"
+                    >
+                      Location
+                    </td>
+                  </styled.td>
+                  <styled.td>
+                    <td
+                      className="sc-eCApGN jdectq"
+                    >
+                      Medan, Indonesia
+                    </td>
+                  </styled.td>
+                </tr>
+              </styled.tr>
+              <styled.tr>
+                <tr
+                  className="sc-hKFyIo brbWtm"
+                >
+                  <styled.td>
+                    <td
+                      className="sc-eCApGN jdectq"
+                    >
+                      Members
+                    </td>
+                  </styled.td>
+                  <styled.td>
+                    <td
+                      className="sc-eCApGN jdectq"
+                    >
+                      180
+                    </td>
+                  </styled.td>
+                </tr>
+              </styled.tr>
+              <styled.tr>
+                <tr
+                  className="sc-hKFyIo brbWtm"
+                >
+                  <styled.td>
+                    <td
+                      className="sc-eCApGN jdectq"
+                    >
+                      Organizer
+                    </td>
+                  </styled.td>
+                  <styled.td>
+                    <td
+                      className="sc-eCApGN jdectq"
+                    >
+                      ReactJs
+                    </td>
+                  </styled.td>
+                </tr>
+              </styled.tr>
+            </table>
+          </styled.table>
+          <styled.button
+            onClick={[Function]}
+          >
+            <button
+              className="sc-gKAblj hLYzZy"
+              onClick={[Function]}
+            >
+              JOINT US
+            </button>
+          </styled.button>
+          <styled.button
+            onClick={[Function]}
+            primary={true}
+          >
+            <button
+              className="sc-gKAblj ebwLEC"
+              onClick={[Function]}
+            >
+              START
+            </button>
+          </styled.button>
+        </section>
+      </styled.section>
+    </section>
+  </styled.section>
+</CardMeetUp>
+`;
