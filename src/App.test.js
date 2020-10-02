@@ -6,7 +6,6 @@ import CardMeetUp from './components/CardMeetUp/CardMeetUp';
 
 import App from './App';
 
-
 it('Pages App running without crash', () => {
   shallow(<App />);
 });
@@ -18,6 +17,7 @@ describe('Test Header CardMeetup', () => {
     expect(heading).toEqual("Hacktiv8 Meetup");
   });
 });
+
 
 // describe('Test component CardMeetup', () => {
 //   it('accept component', () => {
@@ -32,4 +32,3 @@ it("renders correctly", () => {
   const tree = mount(<CardMeetUp location="Medan, Indonesia" members="180" organizer="ReactJs" />);
   expect(toJson(tree)).toMatchSnapshot();
 });
-
